@@ -10,7 +10,7 @@ export async function up (knex: Knex) {
         table.decimal('latitude').notNullable();
         table.decimal('longetude').notNullable(); 
         table.string('city').notNullable(); 
-        table.string('capacity').notNullable(); 
+        table.integer('capacity',2).notNullable(); 
     })
 }
 
